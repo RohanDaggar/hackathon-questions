@@ -1,4 +1,13 @@
 def string_joiner(list1, list2):
+    """This function takes 2 numbered lists as inputs, and returns a unique, ascending ordered, combination of the two
+
+    Args:
+        list1 (list): list of numbers
+        list2 (list): list of numbers
+
+    Returns:
+        list: combines the input lists into one list, removes duplicates and sorts it in ascending order
+    """
     list3 = list1 + list2 # first we join the inputs into one list
     set3 = set(list3) # the list is then converted into a set. Sets are unordered collections of distinct objects, this removes duplicates
     list3 = list(set3) # the set is now converted back to a list
